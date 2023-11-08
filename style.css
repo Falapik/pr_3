@@ -365,7 +365,7 @@ main {
   cursor: pointer;
 }
 .remote {
-  width: 320px;
+  width: 180px;
   margin-left: 30px;
   margin-top: 40px;
   padding-bottom: 20px;
@@ -466,10 +466,6 @@ main {
   align-items: center;
   height: 72px;
   cursor: pointer;
-}
-.remote {
-  width: 320px;
-  margin-left: 30px;
 }
 
 .main-burger {

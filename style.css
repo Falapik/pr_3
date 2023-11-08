@@ -452,13 +452,6 @@ main {
   transform: rotate(180deg);
 }
 
-.swiper-slide {
-  height: 72px;
-  background-color: #ffffff;
-  border-radius: 6px;
-  border: 1px solid #eaeaea;
-}
-
 .links-img {
   display: flex;
   flex-direction: row;

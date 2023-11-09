@@ -96,6 +96,10 @@ main {
     display: flex;
   }
 
+  .repare-test {
+    display: none;
+  }
+
   .main-info__text {
     font-size: 14px;
     width: 245px;
@@ -771,6 +775,11 @@ main {
     justify-content: space-between;
   }
 
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
   .header-menu {
     margin-left: -10px;
   }
@@ -886,13 +895,43 @@ main {
 }
 
 @media (max-width: 320px) {
+  .rem1-info {
+    display: none;
+  }
+  .rem-container {
+    display: none;
+  }
+  .remote-hidden {
+    display: none;
+  }
   .repare-visible,
   .btn {
     display: none;
   }
+  .repare-none__test {
+    display: none;
+  }
 }
 @media (min-width: 321px) {
-  .swiper {
+  .second-swiper {
+    display: none;
+  }
+  .first-swiper {
+    display: none;
+  }
+}
+
+@media (min-width: 530px) {
+  .third-swiper {
+    display: none;
+  }
+}
+@media (max-width: 530px) {
+  .rem-container {
+    display: none;
+  }
+
+  .rem1-info {
     display: none;
   }
 }
@@ -958,6 +997,7 @@ main {
 }
 
 .info {
+  margin-top: 20px;
   margin-left: 20px;
 }
 
@@ -986,7 +1026,93 @@ main {
   margin-top: 15px;
 }
 
-.repare-test {
+.repare-test,
+.repare-none__test {
   width: 100%;
   overflow: hidden;
+}
+
+.remote-container {
+  display: flex;
+  gap: 10px;
+}
+
+.remote-hidden {
+  overflow: hidden;
+}
+
+.remote-list {
+  margin-left: 20px;
+  height: 160px;
+  width: 224px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+}
+
+.remote-list__text {
+  margin: 10px 0 0 10px;
+}
+
+.remote-list__icon {
+  width: 224px;
+  height: 133px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items: flex-end;
+}
+
+.remote-list__icon--next {
+  margin: 0 10px 10px 0;
+}
+
+.rem1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.rem-container {
+  margin-top: 20px;
+  padding: 1px 10px 20px 10px;
+  background-color: #fff;
+}
+.rem1-price {
+  width: 130px;
+  margin-right: 215px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rem1-price__price {
+  margin-left: -15px;
+}
+
+.rem-container__usl {
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.rem-container__usl--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+}
+
+.rem-container__usl--info--order {
+  margin-right: 20px;
+}
+
+.rem-container__rect {
+  height: 1px;
+  background-color: #eaeaea;
+  margin-top: 20px;
+}
+
+.rem-container__usl--main {
+  display: flex;
+  align-items: center;
 }

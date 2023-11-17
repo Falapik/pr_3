@@ -12,8 +12,9 @@
   <body>
     <input type="checkbox" id="menu-toggle1" style="display: none" />
     <label for="menu-toggle1" class="menu-button">
-      <span></span>
+      <span id="showMenu"></span>
     </label>
+          <div class="suare" style="display: none"></div>
     <div class="main-burger"></div>
     <div id="slidebar1">
       <ul>
@@ -279,18 +280,18 @@
             Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
             официальной гарантией производителя.
           </div>
-          <div class="main-info__text1">
+          <div class="main-info__text1" style="display: none;">
             Мы успешно работаем с 1992 года и заслужили репутацию надежного
             партнера, что подтверждает большое количество постоянных клиентов.
             Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
             очередь, советуют нас родным и близким.
           </div>
-          <div class="main-info__readmore">
+          <button onclick="toggleText()" class="main-info__readmore" id="button">
             <div class="main-info__readmore-icon">
               <img src="./img/svg/icon.svg" alt="" />
             </div>
             <div class="main-info__readmore-text">Читать далее</div>
-          </div>
+          </button>
         </div>
         <div class="main-info__img">
           <img class="main-info__img-info" src="./img/png/fon.jpg" alt="" />

@@ -39,3 +39,30 @@ function toggleLinks() {
     });
   }
 }
+
+function toggleText() {
+  const buttonIconFirst = document.querySelector(".main-info__readmore-icon");
+  const buttonTextFirst = document.querySelector(".main-info__readmore-text");
+  let text = document.querySelector(".main-info__text1");
+
+  if (text.style.display === "none") {
+    text.style.display = "block";
+    buttonIconFirst.classList.add("active");
+    buttonTextFirst.innerHTML = "Скрыть";
+  } else {
+    text.style.display = "none";
+    buttonTextFirst.innerHTML = "Показать всё";
+    buttonIconFirst.classList.remove("active");
+  }
+}
+
+const text2 = document.getElementById("showMenu");
+const rect = document.querySelector(".suare");
+
+text2.addEventListener("click", function () {
+  if (rect.style.display === "none") {
+    rect.style.display = "block";
+  } else {
+    rect.style.display = "none";
+  }
+});

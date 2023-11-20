@@ -66,3 +66,15 @@ text2.addEventListener("click", function () {
     rect.style.display = "none";
   }
 });
+
+const btnPhone = document.querySelector(".slidbar-actions__menu");
+const btnClose = document.querySelector(".feedback-close");
+const feedback = document.querySelector(".feedback");
+
+btnPhone.addEventListener("click", function () {
+  feedback.classList.add("acive2");
+});
+
+btnClose.addEventListener("click", function () {
+  feedback.classList.remove("acive2");
+});

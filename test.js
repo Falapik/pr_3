@@ -70,11 +70,30 @@ text2.addEventListener("click", function () {
 const btnPhone = document.querySelector(".slidbar-actions__menu");
 const btnClose = document.querySelector(".feedback-close");
 const feedback = document.querySelector(".feedback");
+const rectFeedback = document.querySelector(".rect-feedback");
+const btnCall = document.querySelector(".slidbar-actions__menu--message");
+const btnCloseCall = document.querySelector(".call-exit");
+const call = document.querySelector(".call");
+const rectCall = document.querySelector(".rect-feedback");
 
 btnPhone.addEventListener("click", function () {
   feedback.classList.add("acive2");
+  rectFeedback.style.display = "block";
+  call.classList.remove("acive4");
 });
 
 btnClose.addEventListener("click", function () {
   feedback.classList.remove("acive2");
+  rectFeedback.style.display = "none";
+});
+
+btnCall.addEventListener("click", function () {
+  call.classList.add("acive4");
+  rectFeedback.style.display = "block";
+  feedback.classList.remove("acive2");
+});
+
+btnCloseCall.addEventListener("click", function () {
+  call.classList.remove("acive4");
+  rectFeedback.style.display = "none";
 });

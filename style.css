@@ -31,6 +31,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 10px;
 }
 .main-info__readmore {
   display: flex;
@@ -87,7 +88,7 @@ main {
 .header {
   height: 88px;
   position: fixed;
-  width: 100%;
+  width: 102vw;
   display: flex;
   justify-content: space-between;
   z-index: 8;
@@ -644,6 +645,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .slider-act {
@@ -681,7 +683,7 @@ main {
   margin-top: -35px;
   height: 88px;
   position: fixed;
-  width: 100%;
+  width: 102vw;
   display: flex;
   justify-content: space-between;
   z-index: 8;
@@ -844,11 +846,13 @@ main {
     display: none;
   }
 
-  .feedback-close {
+  .feedback-close,
+  .call-exit {
     margin-left: -100px;
   }
 
-  .feedback-info {
+  .feedback-info,
+  .call-info {
     margin-top: -80px;
   }
 
@@ -1269,6 +1273,7 @@ main {
 }
 
 .feedback {
+  transition: 0.3s;
   position: fixed;
   width: 320px;
   height: 100vh;
@@ -1280,6 +1285,7 @@ main {
 
 .feedback-close {
   padding: 24px 0px 0px 24px;
+  cursor: pointer;
 }
 
 .feedback-info__highlight {
@@ -1326,17 +1332,20 @@ input[type="text"] {
   color: #b5b6bc;
 }
 
-.feedback-info__text {
+.feedback-info__text,
+.call-info__text {
   color: #b5b6bc;
   margin-left: 24px;
 }
 
-.feedback-info__text span {
+.feedback-info__text span,
+.call-info__text span {
   display: block;
   color: #ff3e79;
 }
 
-.feedback-info__confirm {
+.feedback-info__confirm,
+.call-info__confirm {
   display: flex;
   width: 136px;
   height: 32px;
@@ -1347,14 +1356,77 @@ input[type="text"] {
   justify-content: space-evenly;
 }
 
-.feedback-info__confirm--text {
+.feedback-info__confirm--text,
+.call-info__confirm--text {
   color: #ffffff;
 }
 
 .acive2 {
   right: 0;
+  transition: 0.3s;
 }
 
 .active3 {
   right: 0;
+}
+
+.rect-feedback {
+  display: none;
+  top: 0;
+  right: 0;
+  z-index: 8;
+  width: 90vw;
+  height: 280%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.call {
+  transition: 0.3s;
+  position: fixed;
+  width: 320px;
+  height: 100vh;
+  background-color: #fff;
+  right: -400px;
+  z-index: 99;
+  top: 0;
+}
+
+.call-exit {
+  padding: 20px;
+}
+
+.call-info__hightlight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.call-info__hightlight--text {
+  font-size: 24px;
+}
+
+.call-info__input {
+  height: 48px;
+  padding: 16px;
+}
+
+.input-number {
+  padding: 10px;
+  width: 288px;
+  height: 48px;
+}
+
+.input-number::placeholder {
+  color: #b5b6bc;
+}
+
+.call-info__text {
+  margin-top: 32px;
+}
+
+.acive4 {
+  right: 0;
+  transition: 0.3s;
 }
